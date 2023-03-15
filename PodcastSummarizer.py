@@ -33,7 +33,7 @@ def transcribe(x, inputLang, isUrl):
 
     #split transcribed text into sentences
     sentences = tokenize.sent_tokenize(text=result['text'], language='English')
-    #make strings of n tokens long for summarization
+    #make full-sentence strings of n tokens long for summarization
     coll = createChunks(sentences, n)
     
     summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
@@ -89,7 +89,7 @@ def createChunks(sentences, tokenCount):
     return coll
 
 
-#works, but translations are very low quality
+#works, but translations are very low quality and can only translate to english
 def translate(string):
     translator = pipeline("translation", model="Helsinki-NLP/opus-mt-mul-en")
     return translator(string)
