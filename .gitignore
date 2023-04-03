@@ -1,6 +1,9 @@
 #audio files
 podcast.mp3
 
+.DS_Store
+Models Testing.ipynb
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
