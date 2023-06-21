@@ -16,6 +16,11 @@ tde_theme = gr.themes.Default().set(
     button_secondary_background_fill_hover_dark='#dcddde',
     button_secondary_text_color='#040617',
     button_secondary_text_color_dark='#040617',
+    border_color_primary_dark='#1d1e2e',
+    border_color_accent_dark='#ff1152',
+    block_background_fill_dark='#040617',
+    input_background_fill_dark='#1d1e2e',
+    checkbox_label_background_fill_dark='#1d1e2e'
 )
 
 def downloadPodcastFromUrl(url):
